@@ -1,0 +1,46 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>IOS Calculator</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="container">
+            
+            <form name="calculator">
+                
+                <div id="screen-container">
+                    <input id="screen" type="text" name="result"/>
+                </div>
+                
+                <div id="buttons">
+                    <input type="button" value=" 1 " onclick="addToScreen(this)"/>
+                    <input type="button" value=" 2 " onclick="addToScreen(this)"/>
+                    <input type="button" value=" 3 " onclick="addToScreen(this)"/>
+                    <input type="button" value=" + " onclick="addToScreen(this)"/>
+                    <br/>
+                    
+                    <input type="button" value=" 4 " onclick="addToScreen(this)"/>
+                    <input type="button" value=" 5 " onclick="addToScreen(this)"/>
+                    <input type="button" value=" 6 " onclick="addToScreen(this)"/>
+                    <input type="button" value=" - " onclick="addToScreen(this)"/>
+                    <br/>
+                    
+                    <input type="button" value=" 7 " onclick="addToScreen(this)"/>
+                    <input type="button" value=" 8 " onclick="addToScreen(this)"/>
+                    <input type="button" value=" 9 " onclick="addToScreen(this)"/>
+                    <input type="button" value=" * " onclick="addToScreen(this)"/>
+                    <br/>
+                    
+                    <input type="button" value=" C " onclick="clearScreen()"/>
+                    <input type="button" value=" 0 " onclick="addToScreen(this)"/>
+                    <input type="button" value=" = " onclick="calculate()"/>
+                    <input type="button" value=" / " onclick="addToScreen(this)"/>
+                </div>
+                
+            </form>
+            
+            <script src="js/script.js"></script>
+        </div>
+    </body>
+</html>
