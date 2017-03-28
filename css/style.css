@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: helvetica;
+    background-color: #FFF;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto 0;
+    width: 30px;
+}
+
+h1 {
+    font-family: 'Lato', serif;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+#container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="button"], input[type="text"] {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: button; /* for input */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+form {
+    width: 301px;
+}
+
+#display input {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: #FFF;
+    text-align: right;
+    font-size: 53px;
+    font-weight: 100;
+    border: 1px solid #000;
+}
+
+input[type="text"]#screen {
+    padding-bottom: 0px;
+    line-height: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#keypad {
+    border-right: 1px solid #000;
+}
+
+#keypad input[type="button"] {
+    width: 75px;
+    height: 75px;
+    margin; 0;
+    padding: 0;
+    background-color: lightgrey;
+    font-size: 24px;
+    font-weight: 100;
+    color: #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+input.regular {
+    margin: 0;
+}
+
+input[type="button"]#large {
+    width: 150px;
+}
+
+#keypad input[type="button"].color{
+    background-color: orange; 
+    color: #FFF;
+}
+
+#keypad input[type="button"].dark {
+    background-color: darkgray;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Lato', serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: orange;
+}

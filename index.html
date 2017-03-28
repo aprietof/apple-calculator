@@ -3,44 +3,63 @@
     <head>
         <title>IOS Calculator</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     </head>
     <body>
+        
+        <img class="logo" src="images/apple-logo.png" />
+        
+        <h1>Calculator</h1>
+        
         <div id="container">
             
             <form name="calculator">
                 
-                <div id="screen-container">
+                <div id="display">
                     <input id="screen" type="text" name="result"/>
                 </div>
                 
-                <div id="buttons">
-                    <input type="button" value=" 1 " onclick="addToScreen(this)"/>
-                    <input type="button" value=" 2 " onclick="addToScreen(this)"/>
-                    <input type="button" value=" 3 " onclick="addToScreen(this)"/>
-                    <input type="button" value=" + " onclick="addToScreen(this)"/>
-                    <br/>
+                <div id="keypad">
+                    <input class="dark" type="button" value=" AC " onclick="clearScreen()"/><!-- 
+                    --><input class="dark" type="button" value=" +/- " onclick="plusMinus(this)"/><!--
+                    --><input id="percent" class="dark" type="button" value=" % " onclick=""/><!--
+                    --><input class="color" type="button" value=" ÷ " onclick="addToScreen(this)"/>
+                    <br/><!--
                     
-                    <input type="button" value=" 4 " onclick="addToScreen(this)"/>
-                    <input type="button" value=" 5 " onclick="addToScreen(this)"/>
-                    <input type="button" value=" 6 " onclick="addToScreen(this)"/>
-                    <input type="button" value=" - " onclick="addToScreen(this)"/>
-                    <br/>
+                    --><input type="button" value=" 7 " onclick="addToScreen(this)"/><!--
+                    --><input type="button" value=" 8 " onclick="addToScreen(this)"/><!--
+                    --><input type="button" value=" 9 " onclick="addToScreen(this)"/><!--
+                    --><input class="color" type="button" value=" x " onclick="addToScreen(this)"/>
+                    <br/><!--
                     
-                    <input type="button" value=" 7 " onclick="addToScreen(this)"/>
-                    <input type="button" value=" 8 " onclick="addToScreen(this)"/>
-                    <input type="button" value=" 9 " onclick="addToScreen(this)"/>
-                    <input type="button" value=" * " onclick="addToScreen(this)"/>
-                    <br/>
+                    --><input type="button" value=" 4 " onclick="addToScreen(this)"/><!--
+                    --><input type="button" value=" 5 " onclick="addToScreen(this)"/><!--
+                    --><input type="button" value=" 6 " onclick="addToScreen(this)"/><!--
+                    --><input class="color" type="button" value=" - " onclick="addToScreen(this)"/>
+                    <br/><!--
                     
-                    <input type="button" value=" C " onclick="clearScreen()"/>
-                    <input type="button" value=" 0 " onclick="addToScreen(this)"/>
-                    <input type="button" value=" = " onclick="calculate()"/>
-                    <input type="button" value=" / " onclick="addToScreen(this)"/>
+                    --><input type="button" value=" 1 " onclick="addToScreen(this)"/><!--
+                    --><input type="button" value=" 2 " onclick="addToScreen(this)"/><!--
+                    --><input type="button" value=" 3 " onclick="addToScreen(this)"/><!--
+                    --><input class="color" type="button" value=" + " onclick="addToScreen(this)"/>
+                    <br /><!--
+                    
+                    --><input type="button" id="large" value=" 0 " onclick="addToScreen(this)"/><!--
+                    --><input type="button" value=" . " onclick="addToScreen(this)"/><!--
+                    --><input class="color" type="button" value=" = " onclick="calculate()"/>
+
                 </div>
                 
             </form>
             
-            <script src="js/script.js"></script>
-        </div>
+        </div><!-- end container -->
+        
+        <br/>
+            
+        <footer>
+            <p>Created by <a href="http://adrianprieto.com" target="_blank">Adrian Prieto</a></p>
+        </footer>
+        
+        <script src="js/script.js"></script>
     </body>
 </html>
