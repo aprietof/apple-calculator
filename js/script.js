@@ -51,8 +51,11 @@ function calculate() {
         if(memoryValue.length > 8) {
             display.style.fontSize = "35px";
             memoryValue = parseFloat(memoryValue).toExponential();
+            display.value = memoryValue.toString().slice(0,13)
+        } else {
+            display.value = memoryValue;
         }
-        display.value = memoryValue;
+        
     }
     catch(err) {
         display.value = display.value = "Error";
