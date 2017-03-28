@@ -2,6 +2,8 @@
 
 HTML, CSS and JavaScript simple calculator, styled based on the iPhone calculator.
 
+[Demo](https://aprietof.github.io/apple-calculator/)
+
 ## Features
 
 - Basic Operations (+, -, *, /)
