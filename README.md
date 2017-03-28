@@ -1,4 +1,4 @@
-#Apple Calculator 
+# Apple Calculator 
 
 HTML, CSS and JavaScript simple calculator, styled based on the iPhone calculator.
 
