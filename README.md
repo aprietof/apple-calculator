@@ -2,7 +2,7 @@
 
 HTML, CSS and JavaScript simple calculator, styled based on the iPhone calculator.
 
-## Feautures
+## Features
 
 - Basic Operations (+, -, *, /)
 - Auto resize display
